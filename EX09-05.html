@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>表單內容練習</title>
+        <isindex prompt="請輸入要查詢的內容">
+    </head>
+<body>
+    <img src="ch09/image/pic1.jpg" alt="向日葵" title="向日葵"><br>
+    <b>評價這張照片</b><br>
+       <form action="">
+           <fieldset>
+               <legend>評分</legend>
+               <label for="score"><span class="required">*</span></label> 
+               <input type="radio" name="score" required value="bad">不好看
+               <input type="radio" name="score" required value="soso">還可以
+               <input type="radio" name="score" required value="normal">普通
+               <input type="radio" name="score" required value="good">好
+               <input type="radio" name="score" required value="bravo">太棒了
+           </fieldset>
+           <fieldset>
+               <legend>基本資料</legend>
+               <label for="usename"><span class="required">*</span>您的名子:</label>
+               <input type="text" name="usename" required/><br>
+               <label for="phone"><span class="required">*</span>手機號碼:</label>
+               <input type="text" name="phone" required maxlength="10" pattern="[0-9]*"/><br>
+               <label for="E-mail"><span class="required">*</span>您的E-mail:</label>
+               <input type="text" name="E-mail" required pattern="[A-Za-z0-9_]+@[A-Za-z0-9._]+"/><br>
+           性別: 
+           <input type="radio" name="male">男
+           <input type="radio" name="female">女
+           </fieldset>  
+           <fieldset>
+           <legend>您給這張照片的評價是:</legend>
+           <select name="" id="">
+              <option value="bad">不好看</option>
+              <option value="soso">還可以</option>
+              <option value="normal">普通</option>
+              <option value="good">好</option>
+              <option value="bravo">太棒了</option>
+            </select>
+            </fieldset>
+            <fieldset>
+            <legend>您喜歡什麼類型的照片:</legend>
+              <input type="checkbox">自然風景<br>
+              <input type="checkbox">人像<br>
+              <input type="checkbox">建築<br>
+              <input type="checkbox">夜景<br>
+            </fieldset>  
+            <fieldset>
+            <legend>您對這張照片的評語是:</legend> 
+              <textarea name="" id="" cols="40" rows="3">                  
+              </textarea>
+            </fieldset>    
+              <input type="submit" name="送出"/>
+              <input type="reset" name="清除"/>          
+       </form>
+</body>
+</html>

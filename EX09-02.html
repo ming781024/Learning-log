@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>重複勾選表單</title>
+    </head>
+    <body>
+        <form method="POST" action="mailto:ming781024@gmail.com?subject=mail from test" enctype="text/plain">
+        為什麼喜歡去日本旅遊<br>
+        <input type="checkbox" name="japan" value="airplane">有廉價航空<br>
+        <input type="checkbox" name="japan" value="delicious">美食很吸引人<br>
+        <input type="checkbox" name="japan" value="cheap">旅費便宜<br>
+        <input type="checkbox" name="japan" value="traffic">交通方便<br>
+    <hr>
+        想去那個城市<br>
+        <select name="city" id="" size="1">
+            <option value="1">東京</option>
+            <option value="2">大阪</option>
+            <option value="3" selected>九州</option>
+            <option value="4">北海道</option>
+        </select><br>
+        <input type="submit" name="submit" value="提交"><br>
+        </form>
+    </body>
+</html>

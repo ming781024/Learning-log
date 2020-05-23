@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>多欄式版面設計</title>
+        <style type="text/css">
+            body {
+                margin:0;
+                padding:0;
+            }
+            #back {
+                background-color:#E0EFD1;
+                position:relative;
+                width:560px;
+                margin:0 10% 0 10%;
+                padding:0;
+                border-left:1px solid #669933;
+                border-right:1px solid #669933;
+                border-bottom:1px solid #669933;
+            }
+            #top {
+                width:500px;
+                margin:0;
+                padding:0;
+                border-bottom:1px solid #669933;
+            }
+            #right {
+                width:360px;
+                margin:0px 0px 0px 200px;
+                padding:4px 0px 0px 4px;
+                background-color:#DFEABB;
+            }
+            #left {
+                width:160px;
+                position:absolute;
+                top:101px;
+                left:1px;
+                border:1px;
+            }
+            #left ul {
+                list-style:none;
+                border:none;
+                margin:0;
+                padding:0;
+            }
+            #left li {
+                width:158px;
+                margin:0;
+                padding:0px;
+                font-size:17px;
+                vertical-align:center;
+            }
+            #left a:link,a:visited {
+                display:block;
+                padding:5px 5px 5px 0.5em;
+                border-left:12px solid #669933;
+                border-right:1px solid #669933;
+                background-color:#39561D;
+                color:#FFFFFF;
+                text-decoration:none;
+            }
+            #left a:hover {
+                background-color:#722100;
+                color:#FFFFFF;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="back">
+        <div id="top">
+        <img src="ch16/banner.gif">
+        </div>
+        <div id="left">
+            <ul>
+                <li><a href="http://www.flag.com.tw/book/5105.asp?bokno=F4472">CSS3 網頁設計範例字典</a></li>
+                <li><a href="http://www.flag.com.tw/book/5105.asp?bokno=F4478">邁向 jQuery 達人的階梯</a></li>
+                <li><a href="http://www.flag.com.tw/book/5105.asp?bokno=F9120">Blog 架站王</a></li>
+                <li><a href="http://www.flag.com.tw/book/5105.asp?bokno=F9127">XOOPS 2.3 架站王</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <img src="ch16/F4472.gif">&nbsp;
+            <img src="ch16/F4478.gif">&nbsp;
+            <img src="ch16/F9120.gif">&nbsp;
+            <img src="ch16/F9127.gif">
+        </div>
+    </body>
+</html>

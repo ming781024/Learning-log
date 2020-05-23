@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Canvas tutorial</title>
+    <script type="text/javascript">
+        function draw(){
+            var canvas=document.getElementById('paper');
+            if (canvas.getContext){
+                var ctx=canvas.getContext('2d');
+                ctx.fillRect(25,25,100,100);
+                ctx.strokeRect(175,25,100,100);
+                ctx.fillRect(25,175,250,100);
+                ctx.clearRect(50,200,200,50);
+
+                ctx.beginPath();
+                ctx.moveTo(325,50);
+                ctx.lineTo(525,50);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(325,100);
+                ctx.lineTo(425,125);
+                ctx.lineTo(525,100);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(375,175);
+                ctx.lineTo(325,250);
+                ctx.lineTo(425,250);
+                ctx.fill();
+                ctx.beginPath();
+                ctx.moveTo(475,250);
+                ctx.lineTo(425,175);
+                ctx.lineTo(525,175);
+                ctx.closePath();
+                ctx.stroke();
+            }
+        }    
+    </script>
+    <style type="text/css">
+        canvas{border:1px solid black;}
+    </style>
+</head>
+<body onload="draw();">
+    <canvas id="paper" width="600" height="300"></canvas>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>動態網頁</title>
+        <script>
+            function myscript()
+            { dt=new Date();
+              document.write(dt.toLocaleString());  
+            }
+        </script>
+    </head>
+    <body>
+        <a href="JavaScript:alert('重新裝潢 近日開張')" onmouseover="window.status='歡迎光臨';return true;">旗標出版社</a>
+        <h1 onclick="myscript()">標題一</h1>
+        <form>
+        <input type="button" value="按我看現在時間" onclick="myscript();">
+        </form>
+    </body>
+</html>

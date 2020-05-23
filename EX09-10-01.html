@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>申請帳號</title>
+    </head>
+<body>
+    <h3><b>申請帳號</b></h3><br>
+  <form action="">
+    <label for="ename"><span class="required">*</span>姓名</label>
+    <input type="text" name="name" id="ename" required pattern="[A-Za-z]*" title="只能使用大小寫英文字母"/><br>
+    <label for="email"><span class="requires">*</span>電子郵件</label>
+    <input type="text" name="E-mail" id="email" required pattern="[A-Za-z0-9_]+@[A-Za-z0-9._]+" title="只接受標準電子郵件格式"/><br>
+    <label for="password"><span class="required">*</span>密碼</label>
+    <input type="text" name="password" id="password" required pattern="[A-Z][a-z][0-9]" maxlength="8"><br>
+    <label for="phone">行動電話</label>
+    <input type="text" name="phone" id="phone"><br>
+    <input type="submit" value="送出">
+    <input type="reset" value="清除重填">
+  </form>        
+</body>
+</html>

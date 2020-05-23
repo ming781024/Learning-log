@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+<link type="text/css" rel="stylesheet" href="style.css" />  
+</head>
+<body>
+    <form>
+
+        <div>
+            <label for="Cname"><span class="require">*</span>中文姓名</label>
+            <input type="text" name="name" id="Cname"/>
+        </div>
+	<br />
+	<div>
+            <label for="Ename"><span class="require">*</span>英文姓名</label>
+            <input type="text" name="name" id="Ename" pattern="[A-Za-z]*"  title="只能使用大小寫英文字母"/>
+        </div>
+	<br />
+        <div>
+            <label for="email"><span class="require">*</span>Email</label>
+            <input type="text" pattern="[a-zA-Z0-9_]+@[a-zA-Z0-9._]+" title="只接受標準電子郵件格式"/>
+        </div>
+	<br />
+        <div>
+            <label for="phone">電話</label>
+            <input type="text" name="phone" id="phone" maxlength="10" pattern="[0-9]*" title="只能使用數字"/>
+        </div>
+	<br />
+        <div>
+            <label for="password"><span class="require">*</span>密碼</label>
+            <input type="text" name="password" id="password" required maxlength=8 title="只能使用8碼大小寫英文字母或數字, 首字必須為大寫英文字母" pattern="[A-Z][a-z][0-9]{3}[a-zA-Z0-9]{3}"/>
+        </div>
+	<br />
+        <div class="buttons">
+            <input type="submit" value="送出" />
+        </div>
+    </form>  
+</body>
+</html>

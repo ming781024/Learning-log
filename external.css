@@ -1,0 +1,10 @@
+h2{color:red;		/*設為紅色字*/
+  font-size:20pt;	/*字型大小為 20 點*/
+  font-family:微軟正黑體; /*使用微軟正黑體字型*/
+  text-align:center;	/*置中對齊*/
+  }
+p {color:blue;		/*設為藍色字*/
+  font-size:16pt;	/*字型大小為 16 點*/
+  font-family:標楷體;	/*使用華康中黑體字型*/
+  text-align:center;	/*置中對齊*/
+  }
