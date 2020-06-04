@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>立體陰影</title>
+    <style type="text/css">
+    body{
+        text-align:center;
+    }    
+    .imgborder1{
+        border: black 1px solid;
+        box-shadow: black 16px 16px 20px ;                  /*陰影效果 陰影顏色 X偏移質 Y偏移質 模糊係數*/
+    }
+    .imgborder2{
+        border: black 1px solid;
+        -webkit-filter:drop-shadow(black 16px 16px 20px);   /*濾鏡陰影效果 陰影顏色 X偏移質 Y偏移質 模糊係數*/
+    }
+    </style>
+</head>
+<body>
+    <img src="/ch16/beach.JPG" alt="" class="imgborder1">
+    <p>
+    <img src="/ch16/beach.JPG" alt="" class="imgborder2">
+</body>
+</html>
