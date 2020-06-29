@@ -1,0 +1,42 @@
+body{
+    background-color: #DFEABB;
+}
+#left{
+    float: left;
+    width: 180px;
+}
+#left ul{
+    list-style: none;                        /*拿掉清單前的圓點*/
+    margin: 0px;
+    padding: 0px;
+    border: black 1px solid;
+}
+#left li{
+    border-bottom: white 1px solid;
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+}
+#left a:link,#left a:visited{                /*a:link 設定還沒瀏覽過的連結 a:visited 設定瀏覽過的連結*/
+    display:block;                           /*規定元素以區塊的方式呈現 自動換行*/
+    padding: 5px 5px 5px 0.5em;
+    border-left:#669933 12px solid;
+    border-right:#693 1px solid;
+    background-color:#39561D;
+    color:white;
+    text-decoration:none;                    /*網址連結的底線不顯示*/
+}
+#left a:hover{                               /*設定滑鼠移動到連結上的效果*/
+    background-color: #722100;
+    color:white;
+}
+#right{
+    border: white 3px double;
+    padding: 5px 0px 0px 0px ;
+    font-size: 17px;
+    width: 160px;
+    float: right;
+}
+#center{
+    float: right;
+}

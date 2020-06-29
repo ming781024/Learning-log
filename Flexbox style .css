@@ -1,0 +1,82 @@
+main{
+    background-color:#cccccc;
+    display: flex;           /*並排 切欄*/
+    flex-wrap: wrap;         /*換行*/
+    justify-content: center; /*水平對齊*/
+    align-items: stretch;    /*垂直對齊*/
+}
+main .item{
+    background-color:#ffcccc;
+    flex: none;
+    width: 270px;
+    margin: 10px;
+}
+nav{
+    display: flex;
+}
+nav .logo{
+    background-color: #ffcccc;
+    width: 100px;
+    flex: none;                  /*沒有彈性固定尺寸*/
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+nav .menu{
+    background-color:#ccccff;
+    flex: auto;                  /*盡量把空間填滿*/
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+nav .user{
+    background-color:#ccffcc;
+    width: 100px;
+    flex: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.ad{
+    background-color: #bbeeff;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    background-color: #bbeeff;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid;
+    flex: auto;
+}
+.footer{
+    background-color: #ccccff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+@media screen and (max-width:1200px){
+    main .item{
+        width: 45%;
+    }
+}
+@media screen and (max-width:500px){
+    main .item{
+        width: 90%;
+    }
+}
