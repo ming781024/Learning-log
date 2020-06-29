@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>JSON 基礎練習</title>
+        <script type="text/javascript">
+            var point={
+                "x":3,
+                "y":4,
+                "get":function(){
+                alert(this.x+","+this.y);
+                }
+            };
+            //point.get();
+            var jsonStr=JSON.stringify(point);
+            console.log(jsonStr);
+            var plainObj=JSON.parse(jsonStr);
+            console.log(plainObj);
+            alert(plainObj.x);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

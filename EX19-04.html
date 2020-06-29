@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript函式練習</title>
+        <script type="text/javascript">
+            /*
+            function add(n1,n2){
+                alert(n1+n2);
+                return n1+n2;
+            }
+            var result=add(3,4)*add(10,20);
+            alert(result);
+            */
+
+            function getsum(max){
+                var sum=0;
+                var n=1;
+                while(n<=max){
+                    sum+=n;
+                    n++;
+                }
+                alert(sum);
+                return sum;
+            }
+            var result=getsum(50)*getsum(100);
+            alert(result);
+        </script>
+    </head>
+</html>

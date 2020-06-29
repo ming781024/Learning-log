@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript函式練習2</title>
+        <script type="text/javascript">
+            /*
+            function add(n1,n2){
+                alert(n1+n2);
+            }
+            add(10,11)
+            */
+
+            /*
+            var add=function(n1,n2){
+                alert(n1+n2);
+            };
+            add(31,15);
+            var test=add;
+            test(10,20);
+            */
+            
+            /*
+            var x=function(n1,n2){
+                alert(n1+n2);
+            };
+            x("Hello","World");
+            */
+
+            var x=3;        //全域空間，全域變數
+            function test(){
+                var y=5;    //區域空間，區域變數
+                var x=9;
+                alert(x+y);
+            }
+            test();         //優先搜索內部的程式碼，所以答案等於14
+            alert(x);       //外部的程式碼，不能使用內部的變數，所以答案等於3
+        </script>
+    </head>
+</html>

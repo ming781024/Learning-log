@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript練習3</title>
+        <script type="text/Javascript">
+            alert("這是一個計算機網頁");
+            alert("請輸入兩組數字");
+            var n1=prompt("請輸入第一組數字","");
+            var op=prompt("請輸入運算方式:+ - * /","");
+            var n2=prompt("請輸入第二組數字","");
+            n1=Number(n1);
+            n2=Number(n2);
+            var result;
+            if(op=="+"){
+                result=n1+n2;
+            }else if(op=="-"){
+                result=n1-n2;
+            }else if(op=="*"){
+                result=n1*n2;
+            }else if(op=="/"){
+                result=n1/n2;
+            }else{
+                result="輸入錯誤"
+            }
+            alert(result);
+        </script>
+    </head>
+</html>

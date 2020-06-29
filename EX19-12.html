@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>自動排程</title>
+        <script type="text/javascript">
+            function init(){
+                timer=document.getElementById("timer")
+                window.setTimeout(countdown,1000);  //這裡可用setInterval(每秒不斷執行)代替setTimeout(倒數)
+            }
+            function countdown(){
+                timer.innerHTML=timer.innerHTML-1;
+                if(timer.innerHTML>0){  //還沒倒數到0，繼續倒數
+                window.setTimeout(countdown,1000);  //如果使用setInterval這裡就不需要再設定一次
+                }else{  //倒數到0，執行該動作
+                    document.location="https://www.google.com.tw/"  //導向網頁
+                }
+            }
+        </script>
+    </head>
+    <body onload="init();">
+        <span id="timer">3</span>
+    </body>
+</html>

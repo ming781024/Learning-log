@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML DOM</title>
+        <script type="text/javascript">
+            /*
+            alert(window.screen.width+"x"+window.screen.height);//顯示銀幕解析度
+            */
+
+            function change(){
+                var spanObj=window.document.getElementById("emotion"); //window可省略不寫 直接寫document.getElementById("emotion");
+                spanObj.innerHTML="bad";
+                spanObj.style.color="red";
+                spanObj.style.fontWeight="bold";//javascript裡不能用-的符號 改成去掉-符號首字大寫
+                //spanObj.style.display="none";
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            Today is a <span id="emotion">good</span> day.Let's go to movie.
+        </div>
+        <button onclick="change();">Change</button>
+    </body>
+</html>

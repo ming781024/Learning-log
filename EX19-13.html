@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ajax標籤選單</title>
+        <script type="text/javascript">
+            function getData(pageName){
+                //XMLHttpRequest 物件專門用來和伺服器做連線
+                var req=new XMLHttpRequest();
+                req.open("get","http://127.0.0.1:5500/"+pageName);
+                req.onload=function(){ //load事件，偵測連線的狀態結束
+                    //連線完成
+                    var content=document.getElementById("content");
+                    content.innerHTML=this.responseText;
+                };
+                req.send();//送出連線
+            }
+        </script>
+    </head>
+    <body onload="getData('EX19-13-01.html');">
+        <div>
+            <span onclick="getData('EX19-13-01.html');">熱門</span>
+            <span onclick="getData('EX19-13-02.html');">最新</span>
+        </div>
+        <hr>
+        <div id="content"></div>
+    </body>
+</html>

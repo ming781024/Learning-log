@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Event事件處理</title>
+        <script type="text/javascript">
+            /*
+            function over(element){
+                element.style.color="red";
+            }
+            function out(element){
+                element.style.color="black";
+            }
+            */
+
+            function init(){
+                var btn=document.getElementById("btn");
+                /*
+                btn.onclick=function(){
+                    alert("Clicked");
+                };
+                */
+                var handler=function(){
+                    alert("Clicked")
+                };
+                btn.addEventListener("click",handler);
+            }
+        </script>
+    </head>
+    <body onload="init();">
+        <button id="btn">Click</button>
+        <!--
+        <button onclick="alert('clicked');">click</button>
+        <span onmouseover="over(this);" onmouseout="out(this);">Test</span>
+        <div onmouseover="over(this);" onmouseout="out(this);">Line 2</div>
+        -->
+    </body>
+</html>
